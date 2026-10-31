@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Crush Gym | Strength &amp; Fitness Gym in Bairagarh, Bhopal</title>
+<meta name="description" content="Iron Crush Gym in Bairagarh, Bhopal — a strength-first training floor with barbells, iron plates, dumbbells, racks, benches and machines. Open Monday–Saturday, 7:00–11:00 AM and 5:30–10:30 PM. Rated 4.8/5 from 212 reviews. Call +91 99818 38188.">
+<meta name="theme-color" content="#0D0D0C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23131311'/%3E%3Crect x='10' y='29.5' width='44' height='5' rx='2.5' fill='%23E8590C'/%3E%3Crect x='13' y='20' width='6' height='24' rx='1.6' fill='%23EDEDE7'/%3E%3Crect x='45' y='20' width='6' height='24' rx='1.6' fill='%23EDEDE7'/%3E%3Crect x='22' y='24' width='4.4' height='16' rx='1.4' fill='%23EDEDE7'/%3E%3Crect x='37.6' y='24' width='4.4' height='16' rx='1.4' fill='%23EDEDE7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Iron Crush Gym",
+  "telephone": "+91 99818 38188",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mini Market Road, Near Bank of Baroda, Block A, Hemu Kalani",
+    "addressLocality": "Bairagarh, Bhopal",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "462030",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "11:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:30", "closes": "22:30" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "212", "bestRating": "5" }
+}
+</script>
+<style>
+/* ============================================================
+   IRON CRUSH GYM — DESIGN SYSTEM
+   Palette: black / charcoal / graphite / steel / off-white + molten orange accent
+   Type: Anton (display) · Barlow Condensed (athletic labels) · Inter (body)
+   ============================================================ */
+:root{
+  --bg:#0D0D0C;
+  --bg-soft:#121211;
+  --panel:#161614;
+  --panel-2:#1C1C1A;
+  --steel:#232320;
+  --line:rgba(237,237,231,.10);
+  --line-strong:rgba(237,237,231,.20);
+  --text:#EDEDE7;
+  --muted:#A8A89F;
+  --faint:#6E6E66;
+  --accent:#E8590C;
+  --accent-hot:#F76707;
+  --accent-dim:rgba(232,89,12,.14);
+  --accent-ink:#17110A;
+  --open-dot:#3FC06E;
+  --font-display:'Anton', Impact, sans-serif;
+  --font-cond:'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body:'Inter', system-ui, sans-serif;
+  --gutter:clamp(1.25rem,4vw,2.5rem);
+  --header-h:74px;
+  --ease:cubic-bezier(.22,.61,.21,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 14px);-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:1rem;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--accent);color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent-hot);outline-offset:3px;border-radius:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.container{width:min(1200px,100% - var(--gutter) * 2);margin-inline:auto}
+
+/* Film grain */
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.055;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.6"/></svg>');background-size:240px 240px}
+
+/* Skip link */
+.skip{position:fixed;top:-60px;left:1rem;z-index:2000;background:var(--accent);color:var(--accent-ink);font-family:var(--font-cond);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;padding:.75rem 1.25rem;text-decoration:none;transition:top .3s}
+.skip:focus{top:.75rem}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;font-family:var(--font-cond);font-weight:700;letter-spacing:.17em;text-transform:uppercase;font-size:.82rem;padding:1rem 1.6rem;text-decoration:none;border:1px solid transparent;white-space:nowrap;transition:background .25s var(--ease),transform .25s var(--ease),border-color .25s var(--ease),color .25s var(--ease);clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.btn:focus-visible{outline:none;box-shadow:0 0 0 2px var(--bg),0 0 0 5px var(--accent-hot)}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn-accent:hover{background:var(--accent-hot);border-color:var(--accent-hot);transform:translateY(-2px)}
+.btn-ghost{background:rgba(13,13,12,.35);border-color:var(--line-strong);color:var(--text);backdrop-filter:blur(6px)}
+.btn-ghost:hover{border-color:var(--accent);color:#fff;background:var(--accent-dim);transform:translateY(-2px)}
+.icon{width:1.05em;height:1.05em;flex:none}
+
+/* Section scaffold */
+.section{padding-block:clamp(4.5rem,9vw,7.25rem)}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;border-bottom:1px solid var(--line);padding-bottom:clamp(1.4rem,3vw,2rem);margin-bottom:clamp(2.4rem,5vw,3.75rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--font-cond);font-weight:600;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.eyebrow::before{content:"";display:block;width:2.4rem;height:2px;background:var(--accent)}
+.eyebrow-num{color:var(--accent);font-style:normal}
+.h-display{font-family:var(--font-display);font-weight:400;text-transform:uppercase;line-height:.96;letter-spacing:.012em;font-size:clamp(2.15rem,5.2vw,3.65rem);margin-top:1.1rem}
+.accent-text{color:var(--accent)}
+.section-note{font-family:var(--font-cond);font-weight:600;font-size:.74rem;letter-spacing:.22em;line-height:1.8;text-transform:uppercase;color:var(--faint);text-align:right;border-left:1px solid var(--line-strong);padding-left:1.4rem;white-space:nowrap}
+
+/* Reveal on scroll */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--header-h);display:flex;align-items:center;border-bottom:1px solid transparent;transition:background .4s var(--ease),border-color .4s var(--ease),box-shadow .4s var(--ease)}
+.site-header.scrolled{background:rgba(13,13,12,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--line);box-shadow:0 14px 40px rgba(0,0,0,.4)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:100%}
+.logo-link{display:flex;align-items:center;text-decoration:none;flex:none}
+.logo-link{display:flex;align-items:center;gap:8px;text-decoration:none;flex:none}
+.logo-link .bull-logo{width:47px;height:47px;object-fit:contain;display:block;flex:none}
+.logo-text{display:flex;flex-direction:column;line-height:1}
+.logo-text strong{font-family:'Anton',Impact,sans-serif;font-size:23.5px;font-weight:400;color:#EDEDE7;letter-spacing:1px;white-space:nowrap}
+.logo-text small{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14.5px;color:#E8590C;letter-spacing:8px;margin-top:5px}
+.main-nav{display:flex;align-items:center;gap:clamp(.9rem,1.8vw,1.55rem)}
+.main-nav a{font-family:var(--font-cond);font-weight:600;font-size:.8rem;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);text-decoration:none;position:relative;padding:.4rem .05rem;transition:color .25s}
+.main-nav a::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--accent);transition:width .3s var(--ease)}
+.main-nav a:hover,.main-nav a.active{color:var(--text)}
+.main-nav a:hover::after,.main-nav a.active::after{width:100%}
+.header-call{display:inline-flex;align-items:center;gap:.55rem;background:var(--accent);color:var(--accent-ink);border:0;text-decoration:none;font-family:var(--font-cond);font-weight:700;font-size:.8rem;letter-spacing:.17em;text-transform:uppercase;padding:.78rem 1.2rem;clip-path:polygon(9px 0,100% 0,calc(100% - 9px) 100%,0 100%);transition:background .25s,transform .25s;flex:none}
+.header-call:hover{background:var(--accent-hot);transform:translateY(-1px)}
+.header-call:focus-visible{outline:none;box-shadow:0 0 0 2px var(--bg),0 0 0 5px var(--accent-hot)}
+.header-call-icon{display:none;align-items:center;justify-content:center;width:44px;height:44px;background:var(--accent);color:var(--accent-ink);text-decoration:none;border:0;border-radius:2px;flex:none}
+.header-call-icon:focus-visible{outline:none;box-shadow:0 0 0 2px var(--bg),0 0 0 5px var(--accent-hot)}
+.hamburger{display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:46px;height:46px;background:transparent;border:1px solid var(--line-strong);border-radius:2px;z-index:1002;flex:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text);transition:transform .32s var(--ease),opacity .32s var(--ease)}
+.hamburger.open span:nth-child(1){transform:translateY(4px) rotate(45deg);background:var(--accent)}
+.hamburger.open span:nth-child(2){transform:translateY(-4px) rotate(-45deg);background:var(--accent)}
+
+/* Mobile menu */
+.mobile-menu{position:fixed;top:var(--header-h);left:0;right:0;bottom:0;z-index:998;background:rgba(11,11,10,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:1.4rem var(--gutter) 2.5rem;overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .35s var(--ease),transform .35s var(--ease),visibility .35s}
+.mobile-menu.open{opacity:1;visibility:visible;transform:none}
+.mm-link{display:flex;align-items:baseline;gap:1.1rem;padding:.85rem .2rem;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text);transition:transform .3s var(--ease)}
+.mm-link small{font-family:var(--font-cond);font-weight:600;font-size:.72rem;letter-spacing:.2em;color:var(--accent)}
+.mm-link .mm-txt{font-family:var(--font-display);font-size:clamp(1.5rem,6vw,2rem);letter-spacing:.02em;text-transform:uppercase;transition:color .25s}
+.mm-link:hover{transform:translateX(8px)}
+.mm-link:hover .mm-txt{color:var(--accent)}
+.mm-foot{margin-top:1.6rem;display:grid;gap:.85rem}
+.mm-call{width:100%;font-size:.9rem;padding:1.1rem}
+.mm-meta{font-size:.82rem;color:var(--muted);line-height:1.7}
+.mm-meta strong{color:var(--text)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:#0A0A09}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:66% 18%}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(92deg,rgba(10,10,9,.95) 0%,rgba(10,10,9,.84) 33%,rgba(10,10,9,.42) 62%,rgba(10,10,9,.28) 100%),linear-gradient(180deg,rgba(10,10,9,.42) 0%,rgba(10,10,9,.05) 24%,rgba(10,10,9,.12) 58%,var(--bg) 100%)}
+.hero-inner{position:relative;z-index:1;width:min(1200px,100% - var(--gutter) * 2);margin-inline:auto;padding:calc(var(--header-h) + 1.5rem) 0 5.5rem}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.75rem;font-family:var(--font-cond);font-weight:600;font-size:.74rem;letter-spacing:.34em;text-transform:uppercase;color:var(--text)}
+.hero-eyebrow::before{content:"";width:2.6rem;height:2px;background:var(--accent)}
+.hero-title{font-family:var(--font-display);font-weight:400;text-transform:uppercase;line-height:.94;letter-spacing:.008em;font-size:clamp(3.5rem,12.5vw,8.1rem);margin:1.4rem 0 0}
+.hero-title .line{display:block}
+.hero-title .accent-word{color:var(--accent)}
+.hero-support{font-family:var(--font-cond);font-weight:600;font-size:clamp(1rem,2.6vw,1.5rem);letter-spacing:.3em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.1px rgba(237,237,231,.9);margin-top:1.15rem}
+.hero-copy{margin-top:1.1rem;font-size:1.02rem;color:rgba(237,237,231,.85);letter-spacing:.02em}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.1rem}
+.hero-meta{display:flex;align-items:center;gap:.6rem;margin-top:1.6rem;font-family:var(--font-cond);font-weight:500;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hero-meta .icon{color:var(--accent)}
+.hero-meta .sep{color:var(--faint)}
+.hero [data-animate]{opacity:0;transform:translateY(28px);animation:heroRise .95s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes heroRise{to{opacity:1;transform:none}}
+.scroll-cue{position:absolute;bottom:1.7rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.6rem;z-index:1;color:var(--faint);font-family:var(--font-cond);font-weight:600;font-size:.62rem;letter-spacing:.4em;text-transform:uppercase}
+.scroll-cue-line{width:1px;height:44px;background:var(--line-strong);position:relative;overflow:hidden}
+.scroll-cue-line::after{content:"";position:absolute;left:0;top:-18px;width:1px;height:16px;background:var(--accent);animation:cueDrop 2.2s var(--ease) infinite}
+@keyframes cueDrop{0%{top:-20px}55%{top:110%}100%{top:110%}}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee{border-block:1px solid var(--line);background:var(--bg-soft);padding:.68rem 0;overflow:hidden}
+.marquee-track{display:flex;align-items:center;gap:2.4rem;width:max-content;white-space:nowrap;animation:marquee 36s linear infinite}
+.marquee-item{display:flex;align-items:center;gap:2.4rem;font-family:var(--font-cond);font-weight:600;font-size:.78rem;letter-spacing:.34em;text-transform:uppercase;color:var(--faint)}
+.marquee-item svg{width:20px;height:20px;color:var(--accent);opacity:.85}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2.5rem,5.5vw,4.5rem);align-items:center}
+.about-figure{position:relative}
+.about-figure::before{content:"";position:absolute;top:-16px;left:-16px;width:56%;height:52%;border-top:2px solid var(--accent);border-left:2px solid var(--accent);z-index:2;pointer-events:none}
+.about-figure::after{content:"";position:absolute;bottom:-16px;right:-16px;width:56%;height:52%;border-bottom:2px solid var(--line-strong);border-right:2px solid var(--line-strong);z-index:2;pointer-events:none}
+.about-figure img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 16%;border:1px solid var(--line-strong);z-index:1}
+.caption-plate{position:absolute;left:-14px;bottom:26px;z-index:3;background:rgba(18,18,17,.92);backdrop-filter:blur(6px);border:1px solid var(--line-strong);border-left:3px solid var(--accent);padding:.7rem 1rem}
+.caption-plate b{display:block;font-family:var(--font-cond);font-weight:700;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text)}
+.caption-plate span{font-family:var(--font-cond);font-weight:500;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
+.about-body p{color:var(--muted);line-height:1.75;max-width:56ch}
+.about-body p + p{margin-top:1rem}
+.about-body strong{color:var(--text);font-weight:600}
+.values{margin-top:1.9rem;border-top:1px solid var(--line)}
+.value-row{display:grid;grid-template-columns:2.6rem 1fr;gap:1.1rem;align-items:baseline;padding:1.05rem .2rem;border-bottom:1px solid var(--line);transition:background .3s}
+.value-row:hover{background:rgba(237,237,231,.03)}
+.value-num{font-family:var(--font-cond);font-weight:600;font-size:.8rem;letter-spacing:.1em;color:var(--accent)}
+.value-row b{display:block;font-family:var(--font-cond);font-weight:700;font-size:.98rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text)}
+.value-row span{font-size:.86rem;color:var(--muted)}
+.rating-chip{display:inline-flex;align-items:center;gap:.75rem;margin-top:1.7rem;border:1px solid var(--line-strong);background:var(--panel);padding:.62rem 1rem}
+.rating-chip .rating-num{font-family:var(--font-display);font-size:1.25rem;color:var(--text)}
+.rating-chip small{display:block;font-family:var(--font-cond);font-weight:500;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);line-height:1.5}
+.text-link{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.5rem;font-family:var(--font-cond);font-weight:600;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:.35rem;transition:color .25s,gap .3s var(--ease)}
+.text-link:hover{color:var(--accent-hot);gap:.95rem}
+.text-link .icon{color:var(--accent)}
+
+/* Stars */
+.stars{position:relative;display:inline-flex;flex:none}
+.stars-row{display:inline-flex;gap:2px}
+.stars-back{color:rgba(237,237,231,.16)}
+.stars-front{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;color:var(--accent)}
+.star{width:16px;height:16px;fill:currentColor;flex:none}
+
+/* ============================================================
+   TRAINING
+   ============================================================ */
+.training-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.t-card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);text-decoration:none;color:inherit;overflow:hidden;transition:transform .35s var(--ease),border-color .35s var(--ease),box-shadow .35s var(--ease)}
+.t-card:hover{transform:translateY(-6px);border-color:rgba(232,89,12,.55);box-shadow:0 26px 60px rgba(0,0,0,.45)}
+.t-card:focus-visible{outline:none;box-shadow:0 0 0 2px var(--bg),0 0 0 5px var(--accent-hot)}
+.t-media{position:relative;overflow:hidden;aspect-ratio:3/3.9}
+.t-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform .65s var(--ease);filter:saturate(.85) contrast(1.05)}
+.t-card:hover .t-media img{transform:scale(1.07)}
+.t-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,12,.05) 55%,rgba(13,13,12,.72) 100%)}
+.t-idx{position:absolute;top:.85rem;left:.9rem;z-index:1;font-family:var(--font-display);font-size:.85rem;letter-spacing:.14em;color:var(--text);background:rgba(13,13,12,.62);border:1px solid var(--line-strong);padding:.28rem .55rem;backdrop-filter:blur(4px)}
+.t-body{display:flex;flex-direction:column;flex:1;padding:1.15rem 1.15rem 1.25rem;gap:.45rem}
+.t-body h3{font-family:var(--font-cond);font-weight:700;font-size:1.18rem;letter-spacing:.05em;text-transform:uppercase;line-height:1.15}
+.t-body p{font-size:.85rem;color:var(--muted);line-height:1.6}
+.t-cta{display:flex;align-items:center;gap:.5rem;margin-top:auto;padding-top:.75rem;font-family:var(--font-cond);font-weight:600;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.t-cta svg{transition:transform .3s var(--ease)}
+.t-card:hover .t-cta svg{transform:translateX(7px)}
+
+/* ============================================================
+   FACILITIES
+   ============================================================ */
+.fac-grid{display:grid;grid-template-columns:7fr 5fr;grid-template-rows:1fr 1fr;gap:1.1rem}
+.fac-item{position:relative;overflow:hidden;border:1px solid var(--line);margin:0;min-height:0}
+.fac-main{grid-row:span 2;min-height:500px}
+.fac-sub{min-height:240px}
+.fac-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);filter:saturate(.82) contrast(1.06) brightness(.94)}
+.fac-item:hover img{transform:scale(1.05)}
+.fac-item figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:2.6rem 1.15rem .95rem;background:linear-gradient(180deg,transparent,rgba(7,7,6,.88))}
+.fac-item figcaption b{display:block;font-family:var(--font-cond);font-weight:700;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase}
+.fac-item figcaption span{font-size:.72rem;color:rgba(237,237,231,.68);letter-spacing:.04em}
+.chip-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.chip{border:1px solid var(--line-strong);color:var(--muted);font-family:var(--font-cond);font-weight:600;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;padding:.5rem .95rem;transition:border-color .25s,color .25s}
+.chip:hover{border-color:var(--accent);color:var(--text)}
+.fac-note{margin-top:1.1rem;font-size:.82rem;color:var(--faint)}
+.fac-note a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line-strong);transition:color .25s,border-color .25s}
+.fac-note a:hover{color:var(--text);border-color:var(--accent)}
+
+/* ============================================================
+   SIGNATURE BREAK
+   ============================================================ */
+.signature{position:relative;min-height:72vh;display:flex;align-items:center;overflow:hidden;border-block:1px solid var(--line)}
+.signature-media{position:absolute;inset:0}
+.signature-media img{width:100%;height:100%;object-fit:cover;object-position:center 22%;filter:grayscale(1) contrast(1.12) brightness(.82)}
+.signature-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,8,.92) 0%,rgba(9,9,8,.55) 48%,rgba(9,9,8,.35) 100%),linear-gradient(180deg,rgba(9,9,8,.4),transparent 30%,transparent 60%,rgba(9,9,8,.7))}
+.signature-inner{position:relative;z-index:1;width:min(1200px,100% - var(--gutter) * 2);margin-inline:auto;padding:5rem 0}
+.signature-statement{font-family:var(--font-display);font-weight:400;text-transform:uppercase;line-height:.96;font-size:clamp(2.7rem,8vw,5.4rem);margin-top:1.2rem}
+.signature-statement .line{display:block}
+.signature-sub{margin-top:1.4rem;font-size:1rem;color:rgba(237,237,231,.85);max-width:44ch}
+.signature-link{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.6rem;font-family:var(--font-cond);font-weight:600;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text);text-decoration:none;border:1px solid var(--line-strong);padding:.85rem 1.4rem;transition:border-color .25s,background .25s}
+.signature-link:hover{border-color:var(--accent);background:var(--accent-dim)}
+.signature-link .icon{color:var(--accent)}
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+.g-tile{position:relative;overflow:hidden;border:1px solid var(--line);background:var(--panel);padding:0;cursor:zoom-in;display:block;text-align:left}
+.g-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease);filter:saturate(.85) contrast(1.05)}
+.g-tile:hover img{transform:scale(1.06)}
+.g-tile:focus-visible{outline:none;box-shadow:0 0 0 2px var(--bg),0 0 0 5px var(--accent-hot)}
+.g1{grid-column:span 7;aspect-ratio:16/10.5}
+.g2{grid-column:span 5;aspect-ratio:16/10.5}
+.g3,.g4,.g5{grid-column:span 4;aspect-ratio:4/4.6}
+.g6{grid-column:span 12;aspect-ratio:21/8.5}
+.g-cap{position:absolute;left:0;right:0;bottom:0;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:.6rem;padding:2.3rem 1rem .85rem;background:linear-gradient(180deg,transparent,rgba(7,7,6,.88));opacity:0;transform:translateY(10px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.g-tile:hover .g-cap,.g-tile:focus-visible .g-cap{opacity:1;transform:none}
+.g-cap b{font-family:var(--font-cond);font-weight:700;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase}
+.g-cap span{font-family:var(--font-cond);font-weight:500;font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+.gallery-note{margin-top:1.2rem;font-size:.8rem;color:var(--faint)}
+
+/* ============================================================
+   WHY TRAIN HERE
+   ============================================================ */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--panel)}
+.why-cell{position:relative;padding:1.6rem 1.4rem 1.8rem;border-left:1px solid var(--line);overflow:hidden;transition:background .35s}
+.why-cell:first-child{border-left:0}
+.why-cell::before{content:"";position:absolute;top:0;left:0;height:3px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.why-cell:hover{background:var(--panel-2)}
+.why-cell:hover::before{transform:scaleX(1)}
+.why-idx{font-family:var(--font-display);font-size:2rem;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(237,237,231,.32)}
+.why-cell h3{font-family:var(--font-cond);font-weight:700;font-size:1.02rem;letter-spacing:.08em;text-transform:uppercase;margin:.9rem 0 .45rem}
+.why-cell p{font-size:.83rem;color:var(--muted);line-height:1.6}
+.rating-bar{display:flex;align-items:center;gap:clamp(1.4rem,3vw,2.6rem);margin-top:1.2rem;border:1px solid var(--line-strong);background:linear-gradient(120deg,var(--panel) 0%,#191915 100%);padding:1.4rem clamp(1.4rem,3vw,2.2rem);flex-wrap:wrap}
+.rating-figure{display:flex;align-items:center;gap:1.1rem;flex:none}
+.rating-big{font-family:var(--font-display);font-size:3.4rem;line-height:1;color:var(--text)}
+.rating-meta small{display:block;font-family:var(--font-cond);font-weight:600;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:.4rem}
+.rating-divider{width:1px;align-self:stretch;background:var(--line-strong)}
+.rating-copy{max-width:52ch;font-size:.88rem;color:var(--muted);line-height:1.65}
+.rating-copy strong{color:var(--text);font-weight:600}
+.rating-bar-badge{margin-left:auto;flex:none;color:var(--accent);opacity:.9}
+
+/* ============================================================
+   HOURS
+   ============================================================ */
+.hours-panel{display:grid;grid-template-columns:5fr 7fr;border:1px solid var(--line-strong);background:var(--panel)}
+.hours-visual{position:relative;overflow:hidden;padding:clamp(1.8rem,4vw,3rem);background:linear-gradient(158deg,#1E1D1A 0%,#141412 100%);border-right:1px solid var(--line-strong);display:flex;flex-direction:column;gap:1.5rem}
+.hours-watermark{position:absolute;right:-30px;bottom:-14px;width:230px;height:auto;color:rgba(237,237,231,.05);transform:rotate(-14deg);pointer-events:none}
+.big-days{font-family:var(--font-display);font-size:clamp(3rem,7vw,4.6rem);line-height:.95;letter-spacing:.01em;text-transform:uppercase}
+.big-days span{color:var(--faint);-webkit-text-stroke:0}
+.big-days .accent-text{color:var(--accent)}
+.slot{display:flex;align-items:center;gap:1rem;border:1px solid var(--line);background:rgba(13,13,12,.4);padding:.85rem 1.1rem;position:relative}
+.slot .icon{width:1.7rem;height:1.7rem;color:var(--accent)}
+.slot-label{display:block;font-family:var(--font-cond);font-weight:600;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--faint)}
+.slot-time{display:block;font-family:var(--font-cond);font-weight:700;font-size:1.32rem;letter-spacing:.04em;color:var(--text);margin-top:.1rem}
+.sunday-badge{display:inline-flex;align-items:center;gap:.6rem;align-self:flex-start;border:1px solid rgba(232,89,12,.5);color:var(--accent);font-family:var(--font-cond);font-weight:700;font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;padding:.55rem .9rem}
+.open-status{display:flex;align-items:center;gap:.6rem;font-family:var(--font-cond);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.status-dot{width:11px;height:11px;border-radius:50%;background:#8A8A82;flex:none}
+.open-status.is-open{color:var(--text)}
+.open-status.is-open .status-dot{background:var(--open-dot);box-shadow:0 0 0 4px rgba(63,192,110,.18)}
+.hours-list-wrap{padding:clamp(1.8rem,4vw,2.6rem);display:flex;flex-direction:column}
+.hours-list-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:.6rem}
+.hours-list-head span{font-family:var(--font-cond);font-weight:600;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
+.hours-list{list-style:none}
+.hours-row{display:grid;grid-template-columns:1fr auto;gap:.5rem 1.5rem;align-items:center;padding:.82rem 1rem;border-bottom:1px solid var(--line);transition:background .3s}
+.hours-row:last-child{border-bottom:0}
+.hours-row:hover{background:rgba(237,237,231,.03)}
+.day{display:flex;align-items:center;gap:.7rem;font-family:var(--font-cond);font-weight:700;font-size:.98rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text)}
+.today-tag{display:none;font-family:var(--font-cond);font-weight:700;font-size:.58rem;letter-spacing:.26em;color:var(--accent-ink);background:var(--accent);padding:.16rem .45rem;border-radius:2px}
+.hours-row.today{background:var(--accent-dim);box-shadow:inset 3px 0 0 var(--accent)}
+.hours-row.today .today-tag{display:inline-block}
+.times{text-align:right;font-size:.85rem;color:var(--muted);line-height:1.55}
+.times b{color:var(--text);font-weight:500}
+.hours-row.sunday .day{color:var(--faint)}
+.closed-cell{font-family:var(--font-cond);font-weight:700;font-size:.9rem;letter-spacing:.3em;color:var(--accent);text-align:right}
+.hours-foot{margin-top:auto;padding-top:1.3rem;font-size:.8rem;color:var(--faint)}
+.hours-foot a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.hours-foot a:hover{color:var(--text);border-color:var(--accent)}
+
+/* ============================================================
+   LOCATION
+   ============================================================ */
+.loc-grid{display:grid;grid-template-columns:7fr 5fr;gap:1.4rem;align-items:stretch}
+.map-frame{position:relative;border:1px solid var(--line-strong);overflow:hidden;min-height:440px;height:100%;background:var(--panel)}
+.map-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) invert(.92) contrast(.88) brightness(.95)}
+.loc-card{border:1px solid var(--line-strong);background:var(--panel);padding:clamp(1.7rem,3.5vw,2.4rem);display:flex;flex-direction:column;gap:1.35rem}
+.loc-block{display:flex;gap:.9rem;align-items:flex-start}
+.loc-block .icon{width:1.35rem;height:1.35rem;color:var(--accent);margin-top:.15rem}
+.loc-label{display:block;font-family:var(--font-cond);font-weight:600;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
+.loc-address{font-size:.92rem;line-height:1.7;color:var(--text)}
+.loc-phone{font-family:var(--font-display);font-size:clamp(1.5rem,3.4vw,2rem);letter-spacing:.02em;color:var(--text);text-decoration:none;line-height:1.1;transition:color .25s}
+.loc-phone:hover{color:var(--accent-hot)}
+.loc-hours{font-size:.85rem;color:var(--muted);line-height:1.7}
+.loc-hours b{color:var(--text);font-weight:600}
+.loc-actions{display:grid;gap:.75rem;margin-top:.2rem}
+.loc-actions .btn{width:100%;padding:1.05rem 1.4rem;font-size:.85rem}
+.loc-note{font-size:.76rem;color:var(--faint);border-top:1px solid var(--line);padding-top:1.1rem;line-height:1.65}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{background:#0A0A09;border-top:1px solid var(--line)}
+.footer-top{display:grid;grid-template-columns:1.35fr 1fr 1.25fr;gap:clamp(2rem,5vw,4rem);padding:3.4rem 0 2.4rem}
+.footer-brand .bull-logo{width:52px;height:52px}
+.footer-tag{margin-top:1.1rem;font-family:var(--font-cond);font-weight:600;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.footer-rating{display:flex;align-items:center;gap:.6rem;margin-top:.9rem;font-family:var(--font-cond);font-weight:500;font-size:.72rem;letter-spacing:.14em;color:var(--faint);text-transform:uppercase}
+.footer-col h4{font-family:var(--font-cond);font-weight:600;font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--faint);margin-bottom:.95rem}
+.footer-links{list-style:none;display:grid;gap:.5rem}
+.footer-links a{font-size:.86rem;color:var(--muted);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--text)}
+.footer-visit{display:grid;gap:.8rem;font-size:.85rem;color:var(--muted);line-height:1.65}
+.footer-visit a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line-strong);transition:color .2s,border-color .2s}
+.footer-visit a:hover{color:var(--accent-hot);border-color:var(--accent)}
+.footer-visit .fv-label{font-family:var(--font-cond);font-weight:600;font-size:.64rem;letter-spacing:.28em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:.2rem}
+.footer-bottom{border-top:1px solid var(--line);padding:1.05rem 0 1.2rem;display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;font-size:.76rem;color:var(--faint)}
+.footer-bottom a{color:var(--muted);text-decoration:none}
+.footer-bottom a:hover{color:var(--text)}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox{position:fixed;inset:0;z-index:1500;background:rgba(6,6,5,.93);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.lightbox.open{opacity:1;visibility:visible}
+.lb-figure{max-width:min(1100px,92vw);max-height:88vh;display:flex;flex-direction:column;gap:.7rem}
+.lb-figure img{max-width:100%;max-height:78vh;object-fit:contain;border:1px solid var(--line-strong)}
+.lb-caption-row{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.lb-caption{font-family:var(--font-cond);font-weight:600;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.lb-counter{font-family:var(--font-cond);font-weight:500;font-size:.78rem;letter-spacing:.24em;color:var(--faint)}
+.lb-btn{position:absolute;background:rgba(20,20,19,.75);border:1px solid var(--line-strong);color:var(--text);width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:2px;transition:border-color .25s,background .25s;z-index:2}
+.lb-btn:hover{border-color:var(--accent);background:rgba(28,28,26,.9)}
+.lb-close{top:1.4rem;right:1.4rem}
+.lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+
+/* Back to top */
+.back-top{position:fixed;right:1.3rem;bottom:1.5rem;z-index:900;width:52px;height:52px;border-radius:50%;background:rgba(22,22,20,.9);border:1px solid var(--line-strong);color:var(--text);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(12px);transition:all .35s var(--ease)}
+.back-top.show{opacity:1;visibility:visible;transform:none}
+.back-top:hover{border-color:var(--accent);color:var(--accent-hot)}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1120px){
+  .main-nav{gap:.75rem}
+  .main-nav a{font-size:.72rem;letter-spacing:.12em}
+}
+@media (max-width:1064px){
+  .main-nav,.header-call{display:none}
+  .header-call-icon{display:inline-flex}
+  .hamburger{display:flex}
+}
+@media (max-width:960px){
+  .about-grid{grid-template-columns:1fr;gap:3rem}
+  .about-figure{max-width:480px;margin-inline:auto;width:100%}
+  .caption-plate{left:8px}
+  .training-grid{grid-template-columns:repeat(2,1fr)}
+  .fac-grid{grid-template-columns:1fr;grid-template-rows:none}
+  .fac-main{min-height:0;aspect-ratio:16/10.5}
+  .fac-sub{aspect-ratio:16/9;min-height:0}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .why-cell:nth-child(3){border-left:0;border-top:1px solid var(--line)}
+  .why-cell:nth-child(4){border-top:1px solid var(--line)}
+  .hours-panel{grid-template-columns:1fr}
+  .hours-visual{border-right:0;border-bottom:1px solid var(--line-strong)}
+  .loc-grid{grid-template-columns:1fr}
+  .map-frame{min-height:320px;aspect-ratio:16/10}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .footer-brand{grid-column:1/-1}
+  .section-note{display:none}
+  .g1,.g3,.g4{grid-column:span 6}
+  .g2,.g5{grid-column:span 6}
+  .g1,.g2{aspect-ratio:16/12}
+  .g3,.g4,.g5{aspect-ratio:4/4.2}
+  .g6{aspect-ratio:16/8}
+}
+@media (max-width:640px){
+  :root{--header-h:66px}
+  .logo-link .bull-logo{width:41px;height:41px}
+  .logo-text strong{font-size:19px}
+  .logo-text small{font-size:12px;letter-spacing:7px}
+  .training-grid{grid-template-columns:1fr}
+  .t-media{aspect-ratio:16/10}
+  .why-grid{grid-template-columns:1fr}
+  .why-cell{border-left:0;border-top:1px solid var(--line)}
+  .why-cell:first-child{border-top:0}
+  .why-cell:nth-child(3),.why-cell:nth-child(4){border-top:1px solid var(--line)}
+  .g1,.g2,.g3,.g4,.g5,.g6{grid-column:span 12;aspect-ratio:16/11}
+  .hero-ctas .btn{flex:1 1 auto;justify-content:center}
+  .hero-media img{object-position:70% 14%}
+  .hero-inner{padding-bottom:6rem}
+  .times,.closed-cell{text-align:left}
+  .hours-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr;gap:2rem}
+  .rating-divider{display:none}
+  .rating-bar-badge{display:none}
+  .scroll-cue{display:none}
+  .lb-prev{left:.4rem}.lb-next{right:.4rem}
+  .lb-btn{width:44px;height:44px}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  .marquee-track{animation:none;flex-wrap:wrap}
+  .hero [data-animate]{opacity:1;transform:none;animation:none}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG ICON LIBRARY -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-barbell" viewBox="0 0 36 14">
+    <rect x="3" y="5.4" width="30" height="3.2" rx="1.6" fill="currentColor"/>
+    <rect x="0" y="2.8" width="4.4" height="8.4" rx="1" fill="currentColor"/>
+    <rect x="31.6" y="2.8" width="4.4" height="8.4" rx="1" fill="currentColor"/>
+    <rect x="6.2" y="0.8" width="3.6" height="12.4" rx="1" fill="currentColor"/>
+    <rect x="26.2" y="0.8" width="3.6" height="12.4" rx="1" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 6 6l3.27-1.27a2 2 0 0 1 2.11.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/>
+    <circle cx="12" cy="10" r="2.6"/>
+  </symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <polyline points="12 7 12 12 15.5 14"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="4" y1="12" x2="19" y2="12"/>
+    <polyline points="13 6 19 12 13 18"/>
+  </symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"/>
+    <polyline points="6 11 12 5 18 11"/>
+  </symbol>
+  <symbol id="i-chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="14.5 6 9 12 14.5 18"/>
+  </symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="9.5 6 15 12 9.5 18"/>
+  </symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="6" y1="6" x2="18" y2="18"/>
+    <line x1="18" y1="6" x2="6" y2="18"/>
+  </symbol>
+  <symbol id="i-sunrise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3v5"/>
+    <path d="M9.4 5.6L12 3l2.6 2.6"/>
+    <path d="M6.5 14.5a5.5 5.5 0 0 1 11 0"/>
+    <line x1="3" y1="14.5" x2="6" y2="14.5"/>
+    <line x1="18" y1="14.5" x2="21" y2="14.5"/>
+    <line x1="2.5" y1="18.5" x2="21.5" y2="18.5"/>
+  </symbol>
+  <symbol id="i-sunset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 8V3"/>
+    <path d="M9.4 5.4L12 8l2.6-2.6"/>
+    <path d="M6.5 14.5a5.5 5.5 0 0 1 11 0"/>
+    <line x1="3" y1="14.5" x2="6" y2="14.5"/>
+    <line x1="18" y1="14.5" x2="21" y2="14.5"/>
+    <line x1="2.5" y1="18.5" x2="21.5" y2="18.5"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 24 24">
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+  </symbol>
+  <symbol id="i-direction" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+  </symbol>
+</svg>
+
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="logo-link" href="#home" aria-label="Iron Crush Gym — Home">
+      <!-- IRON CRUSH GYM LOGO (brand lockup, unmodified proportions) -->
+      <img class="bull-logo" src="https://i.ibb.co/jkFBFLDG/file-00000000f1b081f6ad7b8e485969739d.png" alt="Iron Crush Gym Bull Logo">
+        <span class="logo-text"><strong>IRON CRUSH</strong><small>GYM</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#training">Training</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#location">Location</a>
+    </nav>
+    <a class="header-call" href="tel:+919981838188">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call Now
+    </a>
+    <a class="header-call-icon" href="tel:+919981838188" aria-label="Call Iron Crush Gym at +91 99818 38188">
+      <svg class="icon" style="width:1.25rem;height:1.25rem" aria-hidden="true"><use href="#i-phone"/></svg>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <nav aria-label="Mobile navigation">
+    <a class="mm-link" href="#home"><small>01</small><span class="mm-txt">Home</span></a>
+    <a class="mm-link" href="#about"><small>02</small><span class="mm-txt">About</span></a>
+    <a class="mm-link" href="#training"><small>03</small><span class="mm-txt">Training</span></a>
+    <a class="mm-link" href="#facilities"><small>04</small><span class="mm-txt">Facilities</span></a>
+    <a class="mm-link" href="#gallery"><small>05</small><span class="mm-txt">Gallery</span></a>
+    <a class="mm-link" href="#hours"><small>06</small><span class="mm-txt">Hours</span></a>
+    <a class="mm-link" href="#location"><small>07</small><span class="mm-txt">Location</span></a>
+  </nav>
+  <div class="mm-foot">
+    <a class="btn btn-accent mm-call" href="tel:+919981838188">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call Now · +91 99818 38188
+    </a>
+    <p class="mm-meta"><strong>Mon–Sat:</strong> 7:00–11:00 AM &amp; 5:30–10:30 PM<br><strong>Sunday:</strong> Closed<br><strong>Address:</strong> Mini Market Road, Near Bank of Baroda, Block A, Hemu Kalani, Bairagarh, Bhopal</p>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home" aria-label="Iron Crush Gym — Built by Discipline">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=2000&q=80" alt="Athlete setting a barbell across the upper back in a dark, focused strength gym" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3838355/pexels-photo-3838355.jpeg?auto=compress&cs=tinysrgb&w=2000'">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-inner">
+      <span class="hero-eyebrow" data-animate style="--d:.05s">Bairagarh · Bhopal</span>
+      <h1 class="hero-title">
+        <span class="line" data-animate style="--d:.15s">Built By</span>
+        <span class="line accent-word" data-animate style="--d:.28s">Discipline.</span>
+      </h1>
+      <p class="hero-support" data-animate style="--d:.4s">Power Your Next Level.</p>
+      <p class="hero-copy" data-animate style="--d:.5s">Strength. Consistency. Real Progress.</p>
+      <div class="hero-ctas" data-animate style="--d:.6s">
+        <a href="#location" class="btn btn-accent">Visit Our Gym <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="tel:+919981838188" class="btn btn-ghost"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call Now</a>
+      </div>
+      <p class="hero-meta" data-animate style="--d:.72s">
+        <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+        Mon–Sat · 7:00–11:00 AM <span class="sep">&amp;</span> 5:30–10:30 PM <span class="sep">·</span> Sun Closed
+      </p>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <span class="scroll-cue-line"></span>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Strength <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Discipline <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Consistency <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Progress <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Iron Crush Gym <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Strength <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Discipline <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Consistency <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Progress <svg><use href="#i-barbell"/></svg></span>
+      <span class="marquee-item">Iron Crush Gym <svg><use href="#i-barbell"/></svg></span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><em class="eyebrow-num">01</em> About the Gym</span>
+          <h2 class="h-display" id="about-heading">More Than a Workout.<br><span class="accent-text">A Standard.</span></h2>
+        </div>
+        <p class="section-note">Bairagarh<br>Bhopal, India</p>
+      </div>
+      <div class="about-grid">
+        <figure class="about-figure reveal">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80" alt="Athlete training with heavy iron in a dimly lit, focused gym session" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80'">
+          <figcaption class="caption-plate">
+            <b>The Training Floor</b>
+            <span>Bairagarh · Bhopal</span>
+          </figcaption>
+        </figure>
+        <div class="about-body reveal" style="transition-delay:.12s">
+          <p><strong>Iron Crush Gym is a strength-first training floor in Bairagarh, Bhopal</strong> — built around barbells, iron plates and the discipline of showing up. Whether you are chasing your first pull-up or your next personal best on the bar, this is a place to put in honest work.</p>
+          <p>Morning and evening sessions, Monday through Saturday, make it easy to fit training around a real life. Walk in, lift hard, and make <strong>consistency your standard</strong>.</p>
+          <div class="values">
+            <div class="value-row">
+              <span class="value-num">01</span>
+              <span><b>Strength, First</b><span>Barbells, plates and racks at the centre of every session.</span></span>
+            </div>
+            <div class="value-row">
+              <span class="value-num">02</span>
+              <span><b>Consistency</b><span>A floor built for showing up — morning and evening, six days a week.</span></span>
+            </div>
+            <div class="value-row">
+              <span class="value-num">03</span>
+              <span><b>Your Standard</b><span>Work toward your own goals — one rep, one session at a time.</span></span>
+            </div>
+          </div>
+          <div class="rating-chip" aria-label="Rated 4.8 out of 5 from 212 reviews">
+            <span class="rating-num">4.8</span>
+            <span class="stars" aria-hidden="true">
+              <span class="stars-row stars-back">
+                <svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg>
+              </span>
+              <span class="stars-row stars-front" style="width:96%">
+                <svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg>
+              </span>
+            </span>
+            <small>4.8/5 · 212 Reviews</small>
+          </div>
+          <br>
+          <a class="text-link" href="tel:+919981838188">Prefer to talk first? Call the gym <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAINING ============ -->
+  <section class="section" id="training" aria-labelledby="training-heading" style="background:var(--bg-soft);border-block:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><em class="eyebrow-num">02</em> Training</span>
+          <h2 class="h-display" id="training-heading">Pick Your<br><span class="accent-text">Discipline.</span></h2>
+        </div>
+        <p class="section-note">Four Ways<br>To Train</p>
+      </div>
+      <div class="training-grid">
+        <a class="t-card reveal" href="#location" style="transition-delay:.02s" aria-label="Strength Training — plan your visit to Iron Crush Gym">
+          <span class="t-media">
+            <span class="t-idx">01</span>
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80" alt="Athlete driving through a controlled barbell strength movement" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80'">
+          </span>
+          <span class="t-body">
+            <h3>Strength Training</h3>
+            <p>Structured barbell work — squat, press, pull, hinge — built around getting stronger, one session at a time.</p>
+            <span class="t-cta">Plan Your Visit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </span>
+        </a>
+        <a class="t-card reveal" href="#location" style="transition-delay:.1s" aria-label="Free Weights and Resistance Training — plan your visit to Iron Crush Gym">
+          <span class="t-media">
+            <span class="t-idx">02</span>
+            <img src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=800&q=80" alt="Dumbbells and iron plates arranged in the free weights area" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800'">
+          </span>
+          <span class="t-body">
+            <h3>Free Weights &amp; Resistance</h3>
+            <p>Dumbbells, plates, barbells and resistance equipment for full-body training at your own pace.</p>
+            <span class="t-cta">Plan Your Visit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </span>
+        </a>
+        <a class="t-card reveal" href="#location" style="transition-delay:.18s" aria-label="General Fitness and Conditioning — plan your visit to Iron Crush Gym">
+          <span class="t-media">
+            <span class="t-idx">03</span>
+            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=800&q=80" alt="Athlete working through a demanding conditioning session" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80'">
+          </span>
+          <span class="t-body">
+            <h3>Fitness &amp; Conditioning</h3>
+            <p>Build stamina and work capacity with conditioning sessions designed for everyday fitness.</p>
+            <span class="t-cta">Plan Your Visit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </span>
+        </a>
+        <a class="t-card reveal" href="#location" style="transition-delay:.26s" aria-label="Personal Training Support — enquire at Iron Crush Gym">
+          <span class="t-media">
+            <span class="t-idx">04</span>
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Coach guiding a member through a training session in the gym" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517963879433-42a6ad2b8517?auto=format&fit=crop&w=800&q=80'">
+          </span>
+          <span class="t-body">
+            <h3>Personal Training Support</h3>
+            <p>One-on-one support available to structure your training and keep you accountable. Enquire in person or by phone.</p>
+            <span class="t-cta">Enquire Now <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACILITIES ============ -->
+  <section class="section" id="facilities" aria-labelledby="facilities-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><em class="eyebrow-num">03</em> Facilities</span>
+          <h2 class="h-display" id="facilities-heading">Equipment That<br><span class="accent-text">Means Business.</span></h2>
+        </div>
+        <p class="section-note">The Training<br>Floor</p>
+      </div>
+      <div class="fac-grid">
+        <figure class="fac-item fac-main reveal">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80" alt="Wide view of a strength gym floor with equipment, benches and rubber flooring" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3838355/pexels-photo-3838355.jpeg?auto=compress&cs=tinysrgb&w=1600'">
+          <figcaption><b>The Training Floor</b><span>Strength and conditioning zones</span></figcaption>
+        </figure>
+        <figure class="fac-item fac-sub reveal" style="transition-delay:.12s">
+          <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1100&q=80" alt="Squat racks, benches and strength machines on the gym floor" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=80'">
+          <figcaption><b>Racks &amp; Benches</b><span>Barbell and rack stations</span></figcaption>
+        </figure>
+        <figure class="fac-item fac-sub reveal" style="transition-delay:.22s">
+          <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Close detail of dumbbells lined up on a rack in the training area" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=1100&q=80'">
+          <figcaption><b>Dumbbell Range</b><span>Free weights, ready to lift</span></figcaption>
+        </figure>
+      </div>
+      <div class="chip-row reveal" aria-label="Equipment available">
+        <span class="chip">Barbells</span>
+        <span class="chip">Dumbbells</span>
+        <span class="chip">Iron Plates</span>
+        <span class="chip">Benches</span>
+        <span class="chip">Racks</span>
+        <span class="chip">Machines</span>
+        <span class="chip">Rubber Flooring</span>
+      </div>
+      <p class="fac-note reveal">Want to see it all in person? <a href="#location">Get directions to the gym</a> — walk in during training hours, no appointment needed.</p>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE BREAK ============ -->
+  <section class="signature" aria-label="No Shortcuts. Just Work.">
+    <div class="signature-media">
+      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2da7?auto=format&fit=crop&w=2000&q=80" alt="Athlete in deep concentration preparing under dramatic side light" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=2000&q=80'">
+    </div>
+    <div class="signature-overlay"></div>
+    <div class="signature-inner">
+      <span class="eyebrow" style="color:var(--muted)"><svg class="icon" style="color:var(--accent)" aria-hidden="true"><use href="#i-barbell"/></svg> Iron Crush Gym</span>
+      <h2 class="signature-statement">
+        <span class="line">No Shortcuts.</span>
+        <span class="line accent-text">Just Work.</span>
+      </h2>
+      <p class="signature-sub">Consistency is the program. Progress is the outcome — one honest session at a time.</p>
+      <a class="signature-link" href="tel:+919981838188"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> +91 99818 38188</a>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><em class="eyebrow-num">04</em> Gallery</span>
+          <h2 class="h-display" id="gallery-heading">Inside<br><span class="accent-text">The Floor.</span></h2>
+        </div>
+        <p class="section-note">A Look<br>Around</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="g-tile g1 reveal" data-full="https://images.pexels.com/photos/3838355/pexels-photo-3838355.jpeg?auto=compress&cs=tinysrgb&w=1800" data-alt="Wide interior of a dark strength gym with racks, barbells and open floor space" data-caption="The Room" aria-label="View image: The Room">
+          <img src="https://images.pexels.com/photos/3838355/pexels-photo-3838355.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Wide interior of a dark strength gym with racks, barbells and open floor space" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80'">
+          <span class="g-cap"><b>The Room</b><span>View</span></span>
+        </button>
+        <button class="g-tile g2 reveal" style="transition-delay:.1s" data-full="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=1800&q=80" data-alt="Close-up detail of iron weight plates resting on the gym floor" data-caption="Iron &amp; Plates" aria-label="View image: Iron and Plates">
+          <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=1100&q=80" alt="Close-up detail of iron weight plates resting on the gym floor" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1100'">
+          <span class="g-cap"><b>Iron &amp; Plates</b><span>View</span></span>
+        </button>
+        <button class="g-tile g3 reveal" style="transition-delay:.05s" data-full="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1600&q=80" data-alt="Athlete deep in a dumbbell training set in a dark gym" data-caption="Heavy Work" aria-label="View image: Heavy Work">
+          <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Athlete deep in a dumbbell training set in a dark gym" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80'">
+          <span class="g-cap"><b>Heavy Work</b><span>View</span></span>
+        </button>
+        <button class="g-tile g4 reveal" style="transition-delay:.14s" data-full="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1600&q=80" data-alt="Member performing a floor-based training session with dumbbells" data-caption="In Session" aria-label="View image: In Session">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80" alt="Member performing a floor-based training session with dumbbells" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=900&q=80'">
+          <span class="g-cap"><b>In Session</b><span>View</span></span>
+        </button>
+        <button class="g-tile g5 reveal" style="transition-delay:.23s" data-full="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80" data-alt="Athlete out on a stride at sunrise for a conditioning session" data-caption="Endurance" aria-label="View image: Endurance">
+          <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=900&q=80" alt="Athlete out on a stride at sunrise for a conditioning session" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=900&q=80'">
+          <span class="g-cap"><b>Endurance</b><span>View</span></span>
+        </button>
+        <button class="g-tile g6 reveal" data-full="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=2000&q=80" data-alt="Athlete preparing with a mobility stretch before training" data-caption="Before the Session" aria-label="View image: Before the Session">
+          <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1600&q=80" alt="Athlete preparing with a mobility stretch before training" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1600&q=80'">
+          <span class="g-cap"><b>Before the Session</b><span>View</span></span>
+        </button>
+      </div>
+      <p class="gallery-note reveal">Training atmosphere imagery — walk in any training day to feel the real floor.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY TRAIN HERE ============ -->
+  <section class="section" id="why" aria-labelledby="why-heading" style="background:var(--bg-soft);border-top:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><em class="eyebrow-num">05</em> Why Train Here</span>
+          <h2 class="h-display" id="why-heading">The Iron Crush<br><span class="accent-text">Standard.</span></h2>
+        </div>
+        <p class="section-note">Four Reasons<br>To Show Up</p>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-cell">
+          <div class="why-idx">01</div>
+          <h3>Train With Purpose</h3>
+          <p>No guessing. Every session is built around deliberate, focused strength work.</p>
+        </div>
+        <div class="why-cell">
+          <div class="why-idx">02</div>
+          <h3>Build Consistency</h3>
+          <p>Morning and evening sessions, six days a week. Train around your day — not the other way round.</p>
+        </div>
+        <div class="why-cell">
+          <div class="why-idx">03</div>
+          <h3>Focus on Progress</h3>
+          <p>Track the bar, the plate and the habit. Progress you can see, lift and feel.</p>
+        </div>
+        <div class="why-cell">
+          <div class="why-idx">04</div>
+          <h3>Make Fitness a Routine</h3>
+          <p>Fit training into your life until it stops being a phase — and becomes what you do.</p>
+        </div>
+      </div>
+      <div class="rating-bar reveal">
+        <div class="rating-figure">
+          <span class="rating-big">4.8</span>
+          <span class="rating-meta">
+            <span class="stars" aria-hidden="true">
+              <span class="stars-row stars-back">
+                <svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg>
+              </span>
+              <span class="stars-row stars-front" style="width:96%">
+                <svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg>
+              </span>
+            </span>
+            <small>4.8/5 · 212 Reviews</small>
+          </span>
+        </div>
+        <span class="rating-divider" aria-hidden="true"></span>
+        <p class="rating-copy"><strong>Rated 4.8/5 · 212 reviews.</strong> A local strength gym in Bairagarh built for people who want to work hard, stay consistent and keep improving — right where they live.</p>
+        <svg class="rating-bar-badge" width="72" height="30" viewBox="0 0 36 14" aria-hidden="true"><use href="#i-barbell" width="36" height="14"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOURS ============ -->
+  <section class="section" id="hours" aria-labelledby="hours-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><em class="eyebrow-num">06</em> Opening Hours</span>
+          <h2 class="h-display" id="hours-heading">When The Iron<br><span class="accent-text">Is Waiting.</span></h2>
+        </div>
+        <p class="section-note">Monday—<br>Saturday</p>
+      </div>
+      <div class="hours-panel reveal">
+        <div class="hours-visual">
+          <svg class="hours-watermark" viewBox="0 0 36 14" aria-hidden="true"><use href="#i-barbell"/></svg>
+          <span class="eyebrow" style="color:var(--muted)">Training Days</span>
+          <div class="big-days">Mon<span>—</span>Sat<br><span class="accent-text">Two Sessions</span></div>
+          <div class="slot">
+            <svg class="icon" aria-hidden="true"><use href="#i-sunrise"/></svg>
+            <span><span class="slot-label">Morning Session</span><span class="slot-time">7:00 – 11:00 AM</span></span>
+          </div>
+          <div class="slot">
+            <svg class="icon" aria-hidden="true"><use href="#i-sunset"/></svg>
+            <span><span class="slot-label">Evening Session</span><span class="slot-time">5:30 – 10:30 PM</span></span>
+          </div>
+          <span class="sunday-badge">Sunday — Closed</span>
+          <div class="open-status" id="openStatus" role="status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="openStatusText">Checking training hours…</span>
+          </div>
+        </div>
+        <div class="hours-list-wrap">
+          <div class="hours-list-head">
+            <span>The Week At A Glance</span>
+            <span>Mon—Sun</span>
+          </div>
+          <ul class="hours-list" id="hoursList">
+            <li class="hours-row" data-day="1"><span class="day">Monday <em class="today-tag">Today</em></span><span class="times"><b>7:00 AM – 11:00 AM</b><br><b>5:30 PM – 10:30 PM</b></span></li>
+            <li class="hours-row" data-day="2"><span class="day">Tuesday <em class="today-tag">Today</em></span><span class="times"><b>7:00 AM – 11:00 AM</b><br><b>5:30 PM – 10:30 PM</b></span></li>
+            <li class="hours-row" data-day="3"><span class="day">Wednesday <em class="today-tag">Today</em></span><span class="times"><b>7:00 AM – 11:00 AM</b><br><b>5:30 PM – 10:30 PM</b></span></li>
+            <li class="hours-row" data-day="4"><span class="day">Thursday <em class="today-tag">Today</em></span><span class="times"><b>7:00 AM – 11:00 AM</b><br><b>5:30 PM – 10:30 PM</b></span></li>
+            <li class="hours-row" data-day="5"><span class="day">Friday <em class="today-tag">Today</em></span><span class="times"><b>7:00 AM – 11:00 AM</b><br><b>5:30 PM – 10:30 PM</b></span></li>
+            <li class="hours-row" data-day="6"><span class="day">Saturday <em class="today-tag">Today</em></span><span class="times"><b>7:00 AM – 11:00 AM</b><br><b>5:30 PM – 10:30 PM</b></span></li>
+            <li class="hours-row sunday" data-day="0"><span class="day">Sunday <em class="today-tag">Today</em></span><span class="closed-cell">Closed</span></li>
+          </ul>
+          <p class="hours-foot">Holiday schedules may vary — call ahead to <a href="tel:+919981838188">+91 99818 38188</a> to confirm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION ============ -->
+  <section class="section" id="location" aria-labelledby="location-heading" style="background:var(--bg-soft);border-top:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow"><em class="eyebrow-num">07</em> Find Us</span>
+          <h2 class="h-display" id="location-heading">Get To<br><span class="accent-text">The Gym.</span></h2>
+        </div>
+        <p class="section-note">Mini Market Road<br>Bairagarh</p>
+      </div>
+      <div class="loc-grid">
+        <div class="map-frame reveal">
+          <iframe title="Map — Iron Crush Gym, Mini Market Road, Bairagarh, Bhopal" src="https://www.google.com/maps?q=Iron%20Crush%20Gym%2C%20Mini%20Market%20Road%2C%20Bairagarh%2C%20Bhopal%20Madhya%20Pradesh&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="loc-card reveal" style="transition-delay:.12s">
+          <div class="loc-block">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span>
+              <span class="loc-label">Address</span>
+              <span class="loc-address">Iron Crush Gym, Mini Market Road, Near Bank of Baroda, Block A, Hemu Kalani, Bairagarh, Bhopal, Madhya Pradesh 462030, India</span>
+            </span>
+          </div>
+          <div class="loc-block">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span>
+              <span class="loc-label">Phone</span>
+              <a class="loc-phone" href="tel:+919981838188">+91 99818 38188</a>
+            </span>
+          </div>
+          <div class="loc-block">
+            <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+            <span>
+              <span class="loc-label">Training Hours</span>
+              <span class="loc-hours"><b>Mon–Sat:</b> 7:00 AM – 11:00 AM &amp; 5:30 PM – 10:30 PM<br><b>Sunday:</b> Closed</span>
+            </span>
+          </div>
+          <div class="loc-actions">
+            <a class="btn btn-accent" href="tel:+919981838188"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call Now</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Iron%20Crush%20Gym%2C%20Mini%20Market%20Road%2C%20Hemu%20Kalani%2C%20Bairagarh%2C%20Bhopal%20Madhya%20Pradesh%20462030" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-direction"/></svg> Get Directions</a>
+          </div>
+          <p class="loc-note">Landmark: Near Bank of Baroda, Block A, Hemu Kalani — Mini Market Road, Bairagarh. Easy approach from the main road; walk in during training hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo-link" href="#home" aria-label="Iron Crush Gym — Home">
+          <img class="bull-logo" src="https://i.ibb.co/jkFBFLDG/file-00000000f1b081f6ad7b8e485969739d.png" alt="Iron Crush Gym Bull Logo">
+        <span class="logo-text"><strong>IRON CRUSH</strong><small>GYM</small></span>
+        </a>
+        <p class="footer-tag">Strength. Consistency. Real Progress.</p>
+        <span class="footer-rating">
+          <span class="stars" aria-hidden="true" style="transform:scale(.82);transform-origin:left center">
+            <span class="stars-row stars-back">
+              <svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg>
+            </span>
+            <span class="stars-row stars-front" style="width:96%">
+              <svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg>
+            </span>
+          </span>
+          4.8/5 · 212 Reviews
+        </span>
+      </div>
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Visit The Gym</h4>
+        <div class="footer-visit">
+          <span>
+            <span class="fv-label">Address</span>
+            Iron Crush Gym, Mini Market Road, Near Bank of Baroda, Block A, Hemu Kalani, Bairagarh, Bhopal, Madhya Pradesh 462030, India
+          </span>
+          <span>
+            <span class="fv-label">Phone</span>
+            <a href="tel:+919981838188">+91 99818 38188</a>
+          </span>
+          <span>
+            <span class="fv-label">Hours</span>
+            Mon–Sat · 7:00–11:00 AM &amp; 5:30–10:30 PM<br>Sunday · Closed
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footerYear">2025</span> Iron Crush Gym. All rights reserved.</span>
+      <span>Mini Market Road · Bairagarh, Bhopal 462030</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" aria-hidden="true">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close gallery">
+    <svg class="icon" style="width:1.3rem;height:1.3rem" aria-hidden="true"><use href="#i-close"/></svg>
+  </button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">
+    <svg class="icon" style="width:1.4rem;height:1.4rem" aria-hidden="true"><use href="#i-chev-left"/></svg>
+  </button>
+  <figure class="lb-figure">
+    <img id="lbImage" src="" alt="">
+    <figcaption class="lb-caption-row">
+      <span class="lb-caption" id="lbCaption"></span>
+      <span class="lb-counter" id="lbCounter"></span>
+    </figcaption>
+  </figure>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">
+    <svg class="icon" style="width:1.4rem;height:1.4rem" aria-hidden="true"><use href="#i-chev-right"/></svg>
+  </button>
+</div>
+
+<!-- Back to top -->
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <svg class="icon" style="width:1.3rem;height:1.3rem" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</button>
+
+<script>
+(function () {
+  'use strict';
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Sticky header + back to top ---------- */
+  var header = document.getElementById('siteHeader');
+  var backTop = document.getElementById('backTop');
+  function onScroll () {
+    var y = window.scrollY || document.documentElement.scrollTop;
+    header.classList.toggle('scrolled', y > 28);
+    backTop.classList.toggle('show', y > 420);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  backTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+
+  /* ---------- Mobile menu ---------- */
+  var burger = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  var menuLinks = menu.querySelectorAll('a');
+
+  function setMenu (open) {
+    burger.classList.toggle('open', open);
+    menu.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) {
+      var first = menu.querySelector('.mm-link');
+      if (first) first.focus();
+    }
+  }
+  burger.addEventListener('click', function () {
+    setMenu(!menu.classList.contains('open'));
+  });
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () { setMenu(false); burger.focus(); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.classList.contains('open')) {
+      setMenu(false);
+      burger.focus();
+    }
+  });
+
+  /* ---------- Reveal on scroll ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  }
+
+  /* ---------- Active nav highlighting ---------- */
+  var navLinks = document.querySelectorAll('.main-nav a');
+  var sectionIds = ['home', 'about', 'training', 'facilities', 'gallery', 'hours', 'location'];
+  var sections = sectionIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length) {
+    var navObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.getAttribute('id');
+          navLinks.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-38% 0px -55% 0px', threshold: 0 });
+    sections.forEach(function (section) { navObserver.observe(section); });
+  }
+
+  /* ---------- Open now / closed status (Asia/Kolkata) + today highlight ---------- */
+  function istNow () {
+    return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+  }
+  var now = istNow();
+  var day = now.getDay();
+  var mins = now.getHours() * 60 + now.getMinutes();
+  var SLOTS = [[420, 660], [1050, 1350]]; /* 7:00-11:00, 17:30-22:30 */
+  var isOpen = false, closeLabel = '';
+  if (day !== 0) {
+    for (var i = 0; i < SLOTS.length; i++) {
+      if (mins >= SLOTS[i][0] && mins < SLOTS[i][1]) {
+        isOpen = true;
+        closeLabel = SLOTS[i][1] === 660 ? '11:00 AM' : '10:30 PM';
+        break;
+      }
+    }
+  }
+  var statusEl = document.getElementById('openStatus');
+  var statusText = document.getElementById('openStatusText');
+  if (statusEl && statusText) {
+    var msg;
+    if (isOpen) {
+      msg = 'Open Now · Closes ' + closeLabel;
+      statusEl.classList.add('is-open');
+    } else if (day === 0) {
+      msg = 'Closed · Opens Monday 7:00 AM';
+    } else if (mins < 420) {
+      msg = 'Closed · Opens 7:00 AM Today';
+    } else if (mins < 1050) {
+      msg = 'Between Sessions · Opens 5:30 PM Today';
+    } else if (day === 6) {
+      msg = 'Closed · Opens Monday 7:00 AM';
+    } else {
+      msg = 'Closed · Opens Tomorrow 7:00 AM';
+    }
+    statusText.textContent = msg;
+  }
+  var todayRow = document.querySelector('.hours-row[data-day="' + day + '"]');
+  if (todayRow) todayRow.classList.add('today');
+
+  /* ---------- Gallery lightbox ---------- */
+  var tiles = Array.prototype.slice.call(document.querySelectorAll('.g-tile'));
+  var lightbox = document.getElementById('lightbox');
+  var lbImage = document.getElementById('lbImage');
+  var lbCaption = document.getElementById('lbCaption');
+  var lbCounter = document.getElementById('lbCounter');
+  var lbClose = document.getElementById('lbClose');
+  var lbPrev = document.getElementById('lbPrev');
+  var lbNext = document.getElementById('lbNext');
+  var current = 0;
+  var lastTrigger = null;
+
+  function showImage (index) {
+    current = (index + tiles.length) % tiles.length;
+    var tile = tiles[current];
+    lbImage.src = tile.getAttribute('data-full');
+    lbImage.alt = tile.getAttribute('data-alt') || '';
+    lbCaption.textContent = (tile.getAttribute('data-caption') || '').replace(/&amp;/g, '&');
+    lbCounter.textContent = (current + 1) + ' / ' + tiles.length;
+  }
+  function openLightbox (index, trigger) {
+    lastTrigger = trigger || null;
+    showImage(index);
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+  function closeLightbox () {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastTrigger) lastTrigger.focus();
+  }
+  tiles.forEach(function (tile, index) {
+    tile.addEventListener('click', function () { openLightbox(index, tile); });
+  });
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click', function () { showImage(current - 1); });
+  lbNext.addEventListener('click', function () { showImage(current + 1); });
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowLeft') showImage(current - 1);
+    else if (e.key === 'ArrowRight') showImage(current + 1);
+    else if (e.key === 'Tab') {
+      /* simple focus trap within the lightbox controls */
+      var focusables = [lbClose, lbPrev, lbNext];
+      var idx = focusables.indexOf(document.activeElement);
+      e.preventDefault();
+      if (e.shiftKey) {
+        idx = idx <= 0 ? focusables.length - 1 : idx - 1;
+      } else {
+        idx = idx === -1 || idx === focusables.length - 1 ? 0 : idx + 1;
+      }
+      focusables[idx].focus();
+    }
+  });
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById('footerYear');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+})();
+</script>
+</body>
+</html>
